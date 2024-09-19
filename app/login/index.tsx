@@ -32,7 +32,7 @@ export default function LoginScreen() {
 
       const { createdSessionId } = await startOAuthFlow({
         redirectUrl: makeRedirectUri({
-          path: "/home",
+          path: "/(tabs)/home)",
         }),
       });
 

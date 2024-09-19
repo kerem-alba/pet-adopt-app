@@ -44,8 +44,8 @@ export default function RootLayout() {
         <AuthenticationWrapper>
           <Stack>
             <Stack.Screen name="index" />
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen name="login/index" options={{ headerShown: false }} />
-            <Stack.Screen name="home" />
           </Stack>
         </AuthenticationWrapper>
       </ClerkLoaded>

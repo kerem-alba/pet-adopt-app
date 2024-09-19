@@ -1,14 +1,8 @@
 import { Pressable, Text, View } from "react-native";
 import { Link } from "expo-router";
+import { useUser } from "@clerk/clerk-expo";
 
 export default function Index() {
-  return (
-    <View>
-      <Text>Welcome to hell</Text>
-
-      <Link href="/login">
-        <Text>Go to Login Screen</Text>
-      </Link>
-    </View>
-  );
+  const { user } = useUser();
+  return <View>{user ? <Link href={"/(tabs)/home"} /> : <Link href={"/login"} />}</View>;
 }
