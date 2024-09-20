@@ -1,10 +1,10 @@
 import { View, Text, Image, FlatList, StyleSheet, Dimensions } from "react-native";
 import React, { useEffect, useState } from "react";
 import { collection, getDocs, DocumentData } from "firebase/firestore";
-import { db } from "../config/FirebaseConfig";
+import { db } from "../../config/FirebaseConfig";
 
 export default function Slider() {
-  const [sliderList, setSliderList] = useState<DocumentData[]>([]);
+  const [sliderList, setSliderList] = useState([]);
   useEffect(() => {
     GetSliders();
   }, []);

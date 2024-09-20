@@ -46,6 +46,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <Ionicons name="people-circle-sharp" size={36} color={color} />,
         }}
       />
+
+      <Tabs.Screen
+        name="admin"
+        options={{
+          title: "Admin",
+          headerShown: false,
+          tabBarIcon: ({ color }) => <Ionicons name="construct" size={36} color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

@@ -1,6 +1,9 @@
 export default {
-  PRIMARY: "#545B77",
-  SECONDARY: "#F9A826",
-  GRAY: "#8F8e8d",
-  WHITE: "#EAE4DD",
+  PRIMARY: "#405D72",
+  LIGHT_PRIMARY: "#A7E6FF",
+  SECONDARY: "#e59866",
+  LIGHT_SECONDARY: "#fad7a0",
+  GRAY: "#758694",
+  WHITE: "#F9F9F9",
+  BEIGE: "F8EDE3",
 };
