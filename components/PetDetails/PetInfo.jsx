@@ -1,13 +1,13 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import Colors from "../../constants/Colors";
-import Ionicons from "@expo/vector-icons/Ionicons";
+import MarkFav from "../MarkFav";
 
 export default function PetInfo({ pet }) {
   return (
     <View>
       <Image
-        source={{ uri: pet.imageUrl }}
+        source={{ uri: pet?.imageUrl }}
         style={{
           width: "100%",
           height: 400,
@@ -38,10 +38,10 @@ export default function PetInfo({ pet }) {
               color: Colors.GRAY,
             }}
           >
-            Ankara, Çankaya
+            {pet?.address}
           </Text>
         </View>
-        <Ionicons name="heart-outline" size={24} color="black" />
+        <MarkFav pet={pet} />
       </View>
     </View>
   );
