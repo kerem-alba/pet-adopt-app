@@ -88,6 +88,8 @@ export default function AddNewPet() {
       ...formData,
       imageUrl: imageUrl,
       ownerName: user?.fullName,
+      ownerEmail: user?.primaryEmailAddress?.emailAddress,
+      ownerImageUrl: user?.imageUrl,
       id: docId,
     });
     setLoader(false);

@@ -4,6 +4,8 @@ import Colors from "../../constants/Colors";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function OwnerInfo({ pet }) {
+  console.log("pet", pet);
+
   return (
     <View style={styles.container}>
       <View
@@ -19,7 +21,7 @@ export default function OwnerInfo({ pet }) {
             width: 60,
             height: 60,
           }}
-          source={{ uri: "https://img.icons8.com/?size=100&id=E2LI0GQ7_ToC&format=png&color=000000" }}
+          source={{ uri: pet.ownerImageUrl }}
         />
         <View>
           <Text
