@@ -44,7 +44,7 @@ export default function Profile() {
   const { signOut } = useAuth();
 
   const onPressMenu = (menu) => {
-    if (menu == "logout") {
+    if (menu.name == "Logout") {
       signOut();
       return;
     }

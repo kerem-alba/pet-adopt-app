@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# 🐾 Pet Adopt App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📋 Overview
 
-## Get started
+Pet Adopt App is a React Native application built using Expo that allows users to browse, add, and adopt pets. The app offers authentication with Clerk, chat messaging, a favorites feature, and seamless navigation using Expo Router. It integrates Firebase Firestore for database management and storage.
 
-1. Install dependencies
+## 💻 Technologies Used
 
-   ```bash
-   npm install
-   ```
+- **React Native**: For building the mobile application.
+- **Expo**: For streamlined development and testing.
+- **Firebase Firestore**: To manage data and storage.
+- **Clerk**: For user authentication.
+- **React Native Expo Router**: For managing tab-based navigation.
+- **React Native Components**: To create and manage the UI.
+- **Chat Messaging**: Real-time chat functionality with react-native-gifted-chat.
 
-2. Start the app
+## 🌟 Features
 
-   ```bash
-    npx expo start
-   ```
+- **User Authentication**: Users can sign up, log in, and authenticate using Clerk.
+- **Tab Navigation**: Smooth navigation between Home, Favorites, Inbox, Profile sections.
+- **Pet Management**: Add, view, and manage pets in the system.
+- **Favorites**: Users can mark their favorite pets.
+- **Chat Messaging**: Real-time chat between users for pet adoption inquiries.
+- **Profile Management**: Manage user profile and posts.
 
-In the output, you'll find options to open the app in a
+## 📱 How to Use
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Login/Signup**: Users can sign up or log in using their Gmail accounts.
+- **Browse Pets**: Browse available pets on the Home screen.
+- **Add New Pet**: Add a pet for adoption.
+- **Favorites**: Mark pets as favorites and view them in the Favorites tab.
+- **Chat**: Chat with pet owners for more information or to arrange adoption.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📸 Screenshots
 
-## Get a fresh project
+### 1. Get Started Screen
 
-When you're ready, run:
+![Get Started Screen](./screenshots/01GetStartedScreen.jpg)
 
-```bash
-npm run reset-project
-```
+### 2. Auth With Gmail
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+![Auth With Gmail](./screenshots/02AuthWithGmail.jpg)
 
-## Learn more
+### 3. Home Screen
 
-To learn more about developing your project with Expo, look at the following resources:
+![Home Screen](./screenshots/03HomeScreen.jpg)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 4. Home Screen - Birds
 
-## Join the community
+![Home Screen Birds](./screenshots/04HomeScreenBirds.jpg)
 
-Join our community of developers creating universal apps.
+### 5. Home Screen - Cats
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Home Screen Cats](./screenshots/05HomeScreenCats.jpg)
+
+### 6. Pet Info Screen
+
+![Pet Info Screen](./screenshots/06PetInfoScreen.jpg)
+
+### 7. Pet Info Favorited Screen
+
+![Pet Info Favorited Screen](./screenshots/07PetInfoFavedScreen.jpg)
+
+### 8. Favorite Pets Screen
+
+![Favorite Pets Screen](./screenshots/08FavoritePetsScreen.jpg)
+
+### 9. Add Pet Screen
+
+![Add Pet Screen](./screenshots/09AddPetScreen.jpg)
+
+### 10. Add Pet Screen Inputs
+
+![Add Pet Screen Inputs](./screenshots/10AddPetScreenInputs.jpg)
+
+### 11. Inbox Screen
+
+![Inbox Screen](./screenshots/11InboxScreen.jpg)
+
+### 12. Chat Screen
+
+![Chat Screen](./screenshots/12ChatScreen.jpg)
+
+### 13. Profile Screen
+
+![Profile Screen](./screenshots/13ProfileScreen.jpg)
+
+### 14. User Pets - Delete
+
+![User Pets - Delete](./screenshots/14UserPets-Delete.jpg)
