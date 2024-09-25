@@ -2,7 +2,6 @@ import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Fontisto from "@expo/vector-icons/Fontisto";
 import Colors from "../../constants/Colors";
 
 export default function TabLayout() {
@@ -47,14 +46,14 @@ export default function TabLayout() {
         }}
       />
 
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="admin"
         options={{
           title: "Admin",
           headerShown: false,
           tabBarIcon: ({ color }) => <Ionicons name="construct" size={36} color={color} />,
         }}
-      />
+      /> */}
     </Tabs>
   );
 }

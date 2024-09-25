@@ -1,8 +1,8 @@
 import { View, Text, Button } from "react-native";
 import React from "react";
-import { addMultiplePetsToFirestore } from "../../services/firebaseService";
-import { fetchPets } from "../../services/firebaseService";
-import { updatePetsWithNewData } from "../../services/firebaseService";
+import { addMultiplePetsToFirestore } from "./firebaseService";
+import { fetchPets } from "./firebaseService";
+import { updatePetsWithNewData } from "./firebaseService";
 
 export default function admin() {
   const handleAddData = () => {

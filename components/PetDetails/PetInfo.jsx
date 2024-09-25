@@ -4,10 +4,12 @@ import Colors from "../../constants/Colors";
 import MarkFav from "../MarkFav";
 
 export default function PetInfo({ pet }) {
+  const fixedUrl = pet.imageUrl.replace(/\/pet-adopt-app\//, "/pet-adopt-app%2F");
+
   return (
     <View>
       <Image
-        source={{ uri: pet?.imageUrl }}
+        source={{ uri: fixedUrl }}
         style={{
           width: "100%",
           height: 400,

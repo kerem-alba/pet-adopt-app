@@ -36,7 +36,7 @@ export default function PetDetails() {
     const querySnapshot = await getDocs(q);
 
     if (querySnapshot.empty) {
-      await setDoc(doc(db, "Chat", docId1), {
+      await setDoc(doc(db, "Chat", docId1 || docId2), {
         id: docId1,
         users: [
           { email: user.primaryEmailAddress.emailAddress, imageUrl: user.imageUrl, name: user.fullName },
@@ -70,7 +70,14 @@ export default function PetDetails() {
         <View style={{ height: 100 }}></View>
 
         <View style={styles?.bottomContainer}>
-          <TouchableOpacity onPress={initiateChat} style={styles?.adoptBtn}>
+          <TouchableOpacity
+            onPress={initiateChat}
+            disabled={pet?.ownerEmail === user?.primaryEmailAddress?.emailAddress}
+            style={[
+              styles?.adoptBtn,
+              pet?.ownerEmail === user?.primaryEmailAddress?.emailAddress && { backgroundColor: "gray" }, // Butonun stilini gri yapıyoruz
+            ]}
+          >
             <Text
               style={{
                 textAlign: "center",
